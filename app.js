@@ -95,27 +95,14 @@ app.get('/orders',async(req,res) => {
 
 //add to cart details
 app.post('/addToCart', async(req, res) => {
-        let query = {product_id: req.body.id}
+        let data = req.body
         let collection = 'cart'
-        let output = await postData(collection,query);
+        let output = await postData(collection,data);
         res.send(output)
     
 })
 
-// //add to cart details
-// app.post('/addToCart', async(req, res) => {
-//     // if (Array.isArray(req.body.id)){
-//     if ((req.body.id)){
-//         // let query = {product_id: {$in:req.body.id}}
-//         let query = {product_id: req.body.id}
-//         let collection = 'cart'
-//         let output = await postData(collection,query);
-//         res.send(output)
-//     }
-//     // else{
-//     //     res.send('Please enter data ')
-//     // }
-// })
+
 //cart details
 app.get('/cartDetails', async(req, res) => {
 
