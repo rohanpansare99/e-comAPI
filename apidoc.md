@@ -2,45 +2,49 @@
 
 //page 1
    > list of categories
-   * http://localhost:1920/categories
+   * https://e-com-24a3.onrender.com/categories
 
    > list of subctagories wrt categories
-   * http://localhost:1920/subcategories?catId=2
+   * https://e-com-24a3.onrender.com/subcategories?catId=2
+
 
 //page2
-   >List of Products
-   * http://localhost:1920/products/1
+   >List of Products wrt subcategories
+   * https://e-com-24a3.onrender.com/products/1
 
-   >List of products wrt to brand
-   * http://localhost:1920/filter/1?brandId=7
+   >List of products wrt subcategories + brand
+   * https://e-com-24a3.onrender.com/filter/1?brandId=7
 
-   >list of product wrt to offer
-   * http://localhost:1920/filter/10?offerId=2
+   >list of product wrt subcategories + offer
+   * https://e-com-24a3.onrender.com/filter/10?offerId=2
   
+
 //page3
    >Details of product
-   * http://localhost:1920/details/1
+   * https://e-com-24a3.onrender.com/details/1
    
+   >Add item to cart
+   * https://e-com-24a3.onrender.com/addToCart
+
 
 //page4
-  >Items selected
-   * 
+  >List of Items in cart
+   * https://e-com-24a3.onrender.com/cartDetails
+
+   >Delete item from cart
+   * https://e-com-24a3.onrender.com/deleteItem
 
   >Place order
-   * http://localhost:1920/placeOrder
+   * https://e-com-24a3.onrender.com/placeOrder
 
 
 //Page5
    >List of all orders
-   * http://localhost:1920/orders
+   * https://e-com-24a3.onrender.com/orders
 
    >Update order details
-   * http://localhost:1920/updateOrder
+   * https://e-com-24a3.onrender.com/updateOrder
 
    >delete order details
-   * http://localhost:1920/deleteOrder
+   * https://e-com-24a3.onrender.com/deleteOrder
 
-
-
-
-{ "name" : "Arun", "email" : "ar123@gmail.com", "address" : "Home", "phone" : 893121257, "cost" : 1900, "menuItem" : [ 1, 2, 3 ] }
