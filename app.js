@@ -33,6 +33,14 @@ app.get('/subcategories',async (req,res) => {
     let output = await getData(collection,query)
     res.send(output);
 })
+//All Products 
+app.get('/products', async(req,res) => {
+    let query = {}
+   
+    let collection = "products";
+    let output = await getData(collection,query);
+    res.send(output)
+})
 
 //Products  wrt subcategory
 app.get('/products/:subCatId', async(req,res) => {
